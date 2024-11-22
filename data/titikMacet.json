@@ -1,0 +1,435 @@
+{
+    "displayFieldName": "",
+    "fieldAliases": {
+        "NO": "NO",
+        "Nama Tempat": "Nama Tempat",
+        "X": "X",
+        "Y": "Y",
+        "Alamat": "Alamat"
+    },
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": null
+    },
+    "fields": [
+        {
+            "name": "NO",
+            "type": "esriFieldTypeDouble",
+            "alias": "NO"
+        },
+        {
+            "name": "Nama Tempat",
+            "type": "esriFieldTypeString",
+            "alias": "Nama Tempat",
+            "length": 255
+        },
+        {
+            "name": "X",
+            "type": "Point",
+            "alias": "X"
+        },
+        {
+            "name": "Y",
+            "type": "Point",
+            "alias": "Y"
+        },
+        {
+            "name": "Alamat",
+            "type": "esriFieldTypeString",
+            "alias": "Alamat",
+            "length": 255
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "NO": 1.0,
+                "Nama Tempat": "Sekolah Kusuma",
+                "X": 101.49562,
+                "Y": 0.487097,
+                "Alamat": "FFPW+V82, Jl. Bukit Barisan, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau"
+            },
+            "geometry": {
+                "x": 101.495620225548,
+                "y": 0.48709663465137998
+            }
+        },
+        {
+            "attributes": {
+                "NO": 2.0,
+                "Nama Tempat": "RM Baresolok Harapan Raya (Simpang Jl. Bukit Barisan)",
+                "X": 101.484961,
+                "Y": 0.494049,
+                "Alamat": "Jl. Bukit Barisan No.Simpang, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau 29292"
+            },
+            "geometry": {
+                "x": 101.484961213163,
+                "y": 0.49404882426395902
+            }
+        },
+        {
+            "attributes": {
+                "NO": 3.0,
+                "Nama Tempat": "Domino's Pizza",
+                "X": 101.472402,
+                "Y": 0.50088,
+                "Alamat": "Jl. Harapan Raya No.253, Tengkerang Labuai Kec. Bukit Raya, Kec. Sukajadi, Kota Pekanbaru, Riau 28126"
+            },
+            "geometry": {
+                "x": 101.472401838735,
+                "y": 0.50088040137670098
+            }
+        },
+        {
+            "attributes": {
+                "NO": 4.0,
+                "Nama Tempat": "New Car Free Day (CFD) Kota PekanBaru",
+                "X": 101.447428,
+                "Y": 0.5175,
+                "Alamat": "GC8W+XXM, Jl. Jend. Sudirman, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28156"
+            },
+            "geometry": {
+                "x": 101.44742822971899,
+                "y": 0.51750025954368695
+            }
+        },
+        {
+            "attributes": {
+                "NO": 5.0,
+                "Nama Tempat": "Masjid Al Washliyah",
+                "X": 101.446082,
+                "Y": 0.533628,
+                "Alamat": "Jl. Dr. Samratulangi No.7, Sago, Kec. Senapelan, Kota Pekanbaru, Riau 28155"
+            },
+            "geometry": {
+                "x": 101.44608192211901,
+                "y": 0.53362802306344803
+            }
+        },
+        {
+            "attributes": {
+                "NO": 6.0,
+                "Nama Tempat": "Mal Pekanbaru",
+                "X": 101.447936,
+                "Y": 0.53202,
+                "Alamat": "Jl. Jend. Sudirman No.123, Kota Tinggi, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28112"
+            },
+            "geometry": {
+                "x": 101.44793608939,
+                "y": 0.532020394512697
+            }
+        },
+        {
+            "attributes": {
+                "NO": 7.0,
+                "Nama Tempat": "Simpang Garuda Sakti",
+                "X": 101.369112,
+                "Y": 0.464461,
+                "Alamat": "Simpang Baru, Tampan, Pekanbaru City, Riau"
+            },
+            "geometry": {
+                "x": 101.369112439171,
+                "y": 0.46446092439852299
+            }
+        },
+        {
+            "attributes": {
+                "NO": 8.0,
+                "Nama Tempat": "Simpang Tobek Godang",
+                "X": 101.393984,
+                "Y": 0.464239,
+                "Alamat": "F97V+JH5, Jl. HR. Soebrantas, Tuah Karya, Kec. Tampan, Kota Pekanbaru, Riau 28293"
+            },
+            "geometry": {
+                "x": 101.39398430002301,
+                "y": 0.46423870999089401
+            }
+        },
+        {
+            "attributes": {
+                "NO": 9.0,
+                "Nama Tempat": "Simpang Empat Ska",
+                "X": 101.416879,
+                "Y": 0.500647,
+                "Alamat": "Simpang Empat Ska"
+            },
+            "geometry": {
+                "x": 101.416879437047,
+                "y": 0.50064682488809398
+            }
+        },
+        {
+            "attributes": {
+                "NO": 10.0,
+                "Nama Tempat": "Jalan Riau",
+                "X": 101.431367,
+                "Y": 0.535446,
+                "Alamat": "Jl. Riau"
+            },
+            "geometry": {
+                "x": 101.431367426946,
+                "y": 0.53544567746879101
+            }
+        },
+        {
+            "attributes": {
+                "NO": 11.0,
+                "Nama Tempat": "Rumah Sakit Santa Maria hingga Pasar Kodim",
+                "X": 101.44245,
+                "Y": 0.528031,
+                "Alamat": "Jl. Jend. Ahmad Yani No.75, Kota Baru, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28156"
+            },
+            "geometry": {
+                "x": 101.442449670839,
+                "y": 0.52803055977375801
+            }
+        },
+        {
+            "attributes": {
+                "NO": 12.0,
+                "Nama Tempat": "Jalan sudirman di bawah jembatan siak VI",
+                "X": 101.447435,
+                "Y": 0.53645,
+                "Alamat": "Jl. Jend. Sudirman No.40, Kp. Dalam, Kec. Senapelan, Kota Pekanbaru, Riau 28155"
+            },
+            "geometry": {
+                "x": 101.447434752392,
+                "y": 0.536449639858122
+            }
+        },
+        {
+            "attributes": {
+                "NO": 13.0,
+                "Nama Tempat": "Fly over Simpang Mall SKA",
+                "X": 101.419449,
+                "Y": 0.503018,
+                "Alamat": "GC39+4PH, Jl. Soekarno - Hatta, Labuh Baru Tim., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292"
+            },
+            "geometry": {
+                "x": 101.419448996573,
+                "y": 0.50301823953187996
+            }
+        },
+        {
+            "attributes": {
+                "NO": 14.0,
+                "Nama Tempat": "Jalan Jendral Sudirman bawah Flyover Harapan Raya",
+                "X": 101.454271,
+                "Y": 0.499771,
+                "Alamat": "FFX3+RM8, Tengkerang Utara, Bukit Raya, Pekanbaru City, Riau 28128"
+            },
+            "geometry": {
+                "x": 101.454271498426,
+                "y": 0.49977090535664598
+            }
+        },
+        {
+            "attributes": {
+                "NO": 15.0,
+                "Nama Tempat": "Jalan Tuanku Tambusai Samping SKA",
+                "X": 101.414754,
+                "Y": 0.500145,
+                "Alamat": "Jl. Lintas Sumatra 1-500, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292"
+            },
+            "geometry": {
+                "x": 101.41475399245699,
+                "y": 0.50014531906485604
+            }
+        },
+        {
+            "attributes": {
+                "NO": 16.0,
+                "Nama Tempat": "Area Kantor Imigrasi",
+                "X": 101.440703,
+                "Y": 0.521631,
+                "Alamat": "Jl. KH. Ahmad Dahlan 7-9, Pulau Karam, Kec. Sukajadi, Kota Pekanbaru, Riau 28156"
+            },
+            "geometry": {
+                "x": 101.440702805059,
+                "y": 0.52163083367789698
+            }
+        },
+        {
+            "attributes": {
+                "NO": 17.0,
+                "Nama Tempat": "Jl. Soekarno - Hatta 48",
+                "X": 101.419701,
+                "Y": 0.514495,
+                "Alamat": "Jl. Soekarno - Hatta 48, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292"
+            },
+            "geometry": {
+                "x": 101.419701411687,
+                "y": 0.51449490957635302
+            }
+        },
+        {
+            "attributes": {
+                "NO": 18.0,
+                "Nama Tempat": "Simpang Arifin",
+                "X": 101.418346,
+                "Y": 0.471665,
+                "Alamat": "Delima, Tampan, Pekanbaru City, Riau 28289"
+            },
+            "geometry": {
+                "x": 101.418345838357,
+                "y": 0.47166547322087798
+            }
+        },
+        {
+            "attributes": {
+                "NO": 19.0,
+                "Nama Tempat": "Jalan sembilang simpang jalan pramuka",
+                "X": 101.447327,
+                "Y": 0.570561,
+                "Alamat": "Jl. Sembilang No.23, Lembah Sari, Kec. Rumbai Pesisir, Kota Pekanbaru, Riau 28266"
+            },
+            "geometry": {
+                "x": 101.447327308211,
+                "y": 0.57056106364770198
+            }
+        },
+        {
+            "attributes": {
+                "NO": 20.0,
+                "Nama Tempat": "Persimpangan di Tugu Songket",
+                "X": 101.394363,
+                "Y": 0.497628,
+                "Alamat": "F9WV+XQF, Simpang Baru, Tampan, Pekanbaru City, Riau 28292"
+            },
+            "geometry": {
+                "x": 101.394362931508,
+                "y": 0.49762805785747399
+            }
+        },
+        {
+            "attributes": {
+                "NO": 21.0,
+                "Nama Tempat": "Jl. Riau dekat Mall Ciputra",
+                "X": 101.429822,
+                "Y": 0.53526,
+                "Alamat": "Jl. Riau No.169, Padang Terubuk, Kec. Senapelan, Kota Pekanbaru, Riau 28155"
+            },
+            "geometry": {
+                "x": 101.42982195053899,
+                "y": 0.535260237036984
+            }
+        },
+        {
+            "attributes": {
+                "NO": 22.0,
+                "Nama Tempat": "Simpang jl. Riau Ujung dan Jl. Soekarno-Hatta",
+                "X": 101.420242,
+                "Y": 0.535136,
+                "Alamat": "Jl. Riau Ujung No.128, Air Hitam, Kec. Payung Sekaki, Kota Pekanbaru, Riau 28291"
+            },
+            "geometry": {
+                "x": 101.42024150642099,
+                "y": 0.53513619553068803
+            }
+        },
+        {
+            "attributes": {
+                "NO": 23.0,
+                "Nama Tempat": "Pasar Pagi Arengka",
+                "X": 101.419122,
+                "Y": 0.465261,
+                "Alamat": "Jl. Tanjung Da No.10, Sidomulyo Tim., Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28289"
+            },
+            "geometry": {
+                "x": 101.41912226552,
+                "y": 0.46526050984600098
+            }
+        },
+        {
+            "attributes": {
+                "NO": 24.0,
+                "Nama Tempat": "Pasar Sago",
+                "X": 101.444141,
+                "Y": 0.538402,
+                "Alamat": "Pasar bawah pasar wisata, Kampung Dalam, Senapelan, Pekanbaru City, Riau 28152"
+            },
+            "geometry": {
+                "x": 101.444140812326,
+                "y": 0.53840178309971598
+            }
+        },
+        {
+            "attributes": {
+                "NO": 25.0,
+                "Nama Tempat": "Lampu merah perempatan jalan soekarno-hatta, jl durian, jl . Dharma Bakti",
+                "X": 101.419999,
+                "Y": 0.517058,
+                "Alamat": "Jl. Soekarno - Hatta No.87, Labuh Baru Tim., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292"
+            },
+            "geometry": {
+                "x": 101.419999179375,
+                "y": 0.51705819466788605
+            }
+        },
+        {
+            "attributes": {
+                "NO": 26.0,
+                "Nama Tempat": "Depan MTC(metropolitan trade center)",
+                "X": 101.384384,
+                "Y": 0.46461,
+                "Alamat": "Jl. HR. Soebrantas No.KM. 12.5, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 29211"
+            },
+            "geometry": {
+                "x": 101.384384044656,
+                "y": 0.46461049696165002
+            }
+        },
+        {
+            "attributes": {
+                "NO": 27.0,
+                "Nama Tempat": "Jalan Suka Karya(Kualu)",
+                "X": 101.385696,
+                "Y": 0.447257,
+                "Alamat": "Jl. suka karya, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 29211"
+            },
+            "geometry": {
+                "x": 101.385695583082,
+                "y": 0.44725742245203898
+            }
+        },
+        {
+            "attributes": {
+                "NO": 28.0,
+                "Nama Tempat": "Jalan Depan Vila Pesona Panam",
+                "X": 101.366601,
+                "Y": 0.464034,
+                "Alamat": "Jl. ke Bangkinang, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28293"
+            },
+            "geometry": {
+                "x": 101.366600783588,
+                "y": 0.464033754078856
+            }
+        },
+        {
+            "attributes": {
+                "NO": 29.0,
+                "Nama Tempat": "Depan Lapangan Purna MTQ",
+                "X": 101.4541,
+                "Y": 0.478012,
+                "Alamat": "Jl. Jend. Sudirman 13716, Simpang Tiga, Kec. Bukit Raya, Kota Pekanbaru, Riau 28288"
+            },
+            "geometry": {
+                "x": 101.454099964913,
+                "y": 0.478011729025898
+            }
+        },
+        {
+            "attributes": {
+                "NO": 30.0,
+                "Nama Tempat": "Pos Gurindam 9",
+                "X": 101.447506,
+                "Y": 0.532368,
+                "Alamat": "Pos Gurindam 9, Jl. Jend. Sudirman No.61, Rintis, Kec. Lima Puluh, Kota Pekanbaru, Riau 28155"
+            },
+            "geometry": {
+                "x": 101.44750620881899,
+                "y": 0.53236755342862596
+            }
+        }
+    ]
+}
