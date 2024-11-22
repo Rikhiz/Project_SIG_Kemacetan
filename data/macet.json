@@ -5,19 +5,21 @@
         "type": "Feature",
         "properties": {
           "Nama Tempat": "Sekolah Kusuma",
-          "Alamat": "FFPW+V82, Jl. Bukit Barisan, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau"
+          "Alamat": "FFPW+V82, Jl. Bukit Barisan, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau",
+          "gmbr": "gmbr/satu.png"
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [101.49562, 0.487097],
-          "gmbr": "gmbr/i_macet.png"
+          "coordinates": [101.49562, 0.487097]
+          
         }
       },
       {
         "type": "Feature",
         "properties": {
           "Nama Tempat": "RM Baresolok Harapan Raya (Simpang Jl. Bukit Barisan)",
-          "Alamat": "Jl. Bukit Barisan No.Simpang, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau 29292"
+          "Alamat": "Jl. Bukit Barisan No.Simpang, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau 29292",
+          "gmbr": "gmbr/dua.png"
         },
         "geometry": {
           "type": "Point",
@@ -28,7 +30,8 @@
         "type": "Feature",
         "properties": {
           "Nama Tempat": "Domino's Pizza",
-          "Alamat": "Jl. Harapan Raya No.253, Tengkerang Labuai Kec. Bukit Raya, Kec. Sukajadi, Kota Pekanbaru, Riau 28126"
+          "Alamat": "Jl. Harapan Raya No.253, Tengkerang Labuai Kec. Bukit Raya, Kec. Sukajadi, Kota Pekanbaru, Riau 28126",
+                    "gmbr": "gmbr/tiga.png"
         },
         "geometry": {
           "type": "Point",
@@ -39,7 +42,8 @@
         "type": "Feature",
         "properties": {
           "Nama Tempat": "New Car Free Day (CFD) Kota PekanBaru",
-          "Alamat": "GC8W+XXM, Jl. Jend. Sudirman, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28156"
+          "Alamat": "GC8W+XXM, Jl. Jend. Sudirman, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28156",
+                    "gmbr": "gmbr/empat.png"
         },
         "geometry": {
           "type": "Point",
@@ -50,7 +54,8 @@
         "type": "Feature",
         "properties": {
           "Nama Tempat": "Masjid Al Washliyah",
-          "Alamat": "Jl. Dr. Samratulangi No.7, Sago, Kec. Senapelan, Kota Pekanbaru, Riau 28155"
+          "Alamat": "Jl. Dr. Samratulangi No.7, Sago, Kec. Senapelan, Kota Pekanbaru, Riau 28155",
+                    "gmbr": "gmbr/lima.png"
         },
         "geometry": {
           "type": "Point",
@@ -230,12 +235,13 @@
             "type": "Feature",
             "properties": {
                 "Nama Tempat": "Lampu merah perempatan jalan soekarno-hatta, jl durian, jl . Dharma Bakti",
-                "Alamat": "Jl. Soekarno - Hatta No.87, Labuh Baru Tim., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292"
+                "Alamat": "Jl. Soekarno - Hatta No.87, Labuh Baru Tim., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
+                              "gmbr": "gmbr/dua_lima.png"
             },
             "geometry": {
               "type": "Point",
-              "coordinates": [101.419999, 0.517058],
-              "gmbr": "gmbr/dua_lima.png"
+              "coordinates": [101.419999, 0.517058]
+
             }
           },
           {
