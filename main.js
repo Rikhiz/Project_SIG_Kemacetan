@@ -85,7 +85,7 @@ map.on('singleclick', function (evt) {
   // Check if it's a Point feature in the macet layer
   if (type === 'Point') {
     const coordinate = evt.coordinate;
-    const content = '<h3>Nama Tempat : ' + feature.get('Nama Tempat') +
+    var content = '<h3>Nama Tempat : ' + feature.get('Nama Tempat') +
       '</h3>' + '<p>Alamat : ' + feature.get('Alamat') + '</p>';
 
     const imagePath = feature.get('gmbr');
