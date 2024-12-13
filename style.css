@@ -10,3 +10,59 @@ html, body {
   bottom: 0;
   width: 100%;
 }
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  min-width: 250px;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ol-popup-closer:hover {
+  background-color: #ff1c1c;
+}
+.popup-content img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.popup-content img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.popup-content h3 {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.popup-content p {
+  margin: 5px 0;
+  text-align: center;
+}
