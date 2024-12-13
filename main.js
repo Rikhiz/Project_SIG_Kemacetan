@@ -103,23 +103,6 @@ const map = new Map({
 });
 
 
-var polygon = fromExtent(map.getView().getProjection().getExtent());
-polygon.appendLinearRing(fromExtent(extent).getLinearRing(0));
-const feature = pku.getSource().getFeatures();
-
-var solid = new VectorLayer({
-  source: new VectorSource({
-    feature: [feature]
-  }),
-  style: new Style({
-    fill: new Fill({
-      color: "rgba(0, 255, 255, 0.25)"
-    })
-  }), zIndex:4
-});
-map.addLayer(solid);
-
-
 
 
 
@@ -160,4 +143,15 @@ document.getElementById('popup-closer').onclick = function () {
   overlay.setPosition(undefined);
   return false;
 };
+// Fungsi untuk mengontrol visibilitas layer
+document.getElementById('toggle-pku').addEventListener('change', function (event) {
+  pku.setVisible(event.target.checked); // Tampilkan atau sembunyikan layer pku
+});
 
+document.getElementById('toggle-macet').addEventListener('change', function (event) {
+  macet.setVisible(event.target.checked); // Tampilkan atau sembunyikan layer macet
+});
+
+// Pastikan layer terlihat saat inisialisasi
+pku.setVisible(true);
+macet.setVisible(true);
