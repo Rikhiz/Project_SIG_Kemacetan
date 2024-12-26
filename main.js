@@ -11,64 +11,13 @@ import { Icon, Style , Fill, Stroke} from 'ol/style.js';
 import Overlay from 'ol/Overlay.js';
 import { getVectorContext } from "ol/render";
 
-const pekanbaruCoordinates = fromLonLat([101.4498, 0.5071]); // Pekanbaru coordinates
-// Initialize overlay for popup
+const pekanbaruCoordinates = fromLonLat([101.4498, 0.5071]); 
+
 var extent = transformExtent([10, 53, 20, 57], "EPSG:4326", "EPSG:3857");
 const overlay = new Overlay({
   element: document.getElementById('popup'),
   autoPan: { animation: { duration: 250 } },
 });
-
-
-// Vector layer for polygons
-const pku = new VectorLayer({
-  source: new VectorSource({
-    format: new GeoJSON(),
-    url: 'data/polygonpku.json',
-  }),
-  style: new Style({
-    fill: new Fill({
-      color: 'rgba(255, 255, 255, 0.7)', // Semi-transparent white fill
-    }),
-    stroke: new Stroke({
-      color: 'rgba(53, 113, 161, 0.5)', // Cyan stroke for contrast
-      width: 2,
-    }),
-      }),
-
-  zIndex: 2
-});
-
-
-const macet = new VectorLayer({
-  source: new VectorSource({
-    format: new GeoJSON(),
-    url: 'data/macet.json', 
-  }),
-  style: new Style({
-    image: new Icon({
-      anchor: [0.5, 46],
-      anchorXUnits: 'fraction',
-      anchorYUnits: 'pixels',
-      src: 'icon/i_macet.png', // Ensure the icon path is correct
-      scale: 0.08, 
-    }),
-  }),
-  zIndex: 3, // Ensure it renders above the pku layer
-});
-
-// Function to restrict map view to Pekanbaru polygon area
-pku.getSource().on('change', function () {
-  if (pku.getSource().getState() === 'ready') {
-    const extent = pku.getSource().getExtent(); // Get the bounding box of the pku polygon
-    map.getView().fit(extent, { duration: 1000 }); // Fit map view to the polygon extent
-    map.getView().setMinZoom(12); // Set minimum zoom level
-    map.getView().setMaxZoom(18); // Optional: Set maximum zoom level
-    map.getView().setExtent(extent); // Restrict map view to this extent
-  }
-});
-
-var extent = transformExtent([10, 53, 20, 57], "EPSG:4326", "EPSG:3857");
 
 var osmLayer = new TileLayer({
   source: new OSM()
@@ -88,22 +37,53 @@ osmLayer.on("postrender", function (event) {
   vectorContext.drawGeometry(polygon);
 });
 
-// Map initialization
+const macet = new VectorLayer({
+  source: new VectorSource({
+    format: new GeoJSON(),
+    url: 'data/macet.json', 
+  }),
+  style: new Style({
+    image: new Icon({
+      anchor: [0.5, 46],
+      anchorXUnits: 'fraction',
+      anchorYUnits: 'pixels',
+      src: 'icon/i_macet.png',
+      scale: 0.08, 
+    }),
+  }),
+  zIndex: 3,
+});
+
+const pku = new VectorLayer({
+  source: new VectorSource({
+    format: new GeoJSON(),
+    url: 'data/polygonpku.json',
+  }),
+  style: new Style({
+    fill: new Fill({
+      color: 'rgba(255, 255, 255, 0.7)', // Semi-transparent white fill
+    }),
+    stroke: new Stroke({
+      color: 'rgba(53, 113, 161, 0.5)', // Cyan stroke for contrast
+      width: 2,
+    }),
+  }),
+  zIndex: 2,
+});
+
 const map = new Map({
   target: 'map',
   layers: [
     osmLayer,  // Add the OSM base layer here
-    pku, // Polygon layer
-    macet, // Traffic points layer
+    pku, 
+    macet,
+    
   ],
   view: new View({
     center: pekanbaruCoordinates,
     zoom: 12, // Adjust zoom level as needed
   }),
 });
-
-
-
 
 
 map.addOverlay(overlay);
@@ -152,6 +132,4 @@ document.getElementById('toggle-macet').addEventListener('change', function (eve
   macet.setVisible(event.target.checked); // Tampilkan atau sembunyikan layer macet
 });
 
-// Pastikan layer terlihat saat inisialisasi
-pku.setVisible(true);
-macet.setVisible(true);
+
