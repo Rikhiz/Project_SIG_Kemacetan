@@ -61,10 +61,10 @@ const pku = new VectorLayer({
   }),
   style: new Style({
     fill: new Fill({
-      color: 'rgba(255, 255, 255, 0.7)', // Semi-transparent white fill
+      color: 'rgba(255, 255, 255, 0.48)', // Semi-transparent white fill
     }),
     stroke: new Stroke({
-      color: 'rgba(53, 113, 161, 0.5)', // Cyan stroke for contrast
+      color: 'rgba(0, 136, 248, 0.5)', // Cyan stroke for contrast
       width: 2,
     }),
   }),
@@ -92,7 +92,6 @@ map.addOverlay(overlay);
 
 // Add popup for feature click
 map.on('singleclick', function (evt) {
-  // Retrieve feature and layer at the clicked pixel
   let clickedFeature = null;
   let clickedLayer = null;
 
@@ -105,18 +104,22 @@ map.on('singleclick', function (evt) {
   if (clickedFeature && clickedLayer === macet) {
     const coordinate = evt.coordinate;
     let content = `
-      <h3>${clickedFeature.get('Nama Tempat') || 'Unknown Place'}</h3>
-      <p>${clickedFeature.get('Alamat') || 'No Address Available'}</p>
-    `;
+      <div class="popup-content">
+        <h3>${clickedFeature.get('Nama Tempat') || 'Unknown Place'}</h3>
+        <p><strong>Alamat:</strong> ${clickedFeature.get('Alamat') || 'No Address Available'}</p>
+        <p><strong>Waktu Macet:</strong> ${clickedFeature.get('waktuMacet') || 'Tidak Tersedia'}</p>
+      `;
+
     const imagePath = clickedFeature.get('gmbr'); // Get the image path from the feature's properties
     if (imagePath) {
-      content += `<img src="${imagePath}" alt="Image" width="200" />`; // Ensure the image path is correct
+      content += `<img src="${imagePath}" alt="Image" />`;
     }
+
+    content += `</div>`; // Closing the popup content container
     document.getElementById('popup-content').innerHTML = content;
     overlay.setPosition(coordinate);
   } else {
-    // Hide the popup if the clicked feature isn't part of the macet layer
-    overlay.setPosition(undefined);
+    overlay.setPosition(undefined); // Hide the popup
   }
 });
 function filterMacetByTime() {
@@ -125,31 +128,70 @@ function filterMacetByTime() {
   const soreChecked = document.getElementById('macet-sore').checked;
   const malamChecked = document.getElementById('macet-malam').checked;
 
-  const allUnchecked = !pagiChecked && !siangChecked && !soreChecked && !malamChecked; // Semua checkbox tidak aktif
-  const allChecked = pagiChecked && siangChecked && soreChecked && malamChecked; // Semua checkbox aktif
+  const allUnchecked = !pagiChecked && !siangChecked && !soreChecked && !malamChecked;
+  const trafficListContainer = document.getElementById('traffic-list');
+  const trafficItems = document.getElementById('traffic-items');
+  trafficItems.innerHTML = ''; // Bersihkan daftar sebelumnya
 
-  const features = macet.getSource().getFeatures(); // Mendapatkan semua fitur
+  let hasMatchingFeatures = false; // Flag untuk fitur yang sesuai
 
-  // Iterasi fitur dan atur visibilitas berdasarkan filter
+  const features = macet.getSource().getFeatures();
   features.forEach((feature) => {
-    const waktuMacet = feature.get('waktuMacet'); // Ambil waktu macet dari properti fitur
+    const waktuMacet = feature.get('waktuMacet');
+    const namaTempat = feature.get('Nama Tempat') || 'Unknown Place';
+    const alamat = feature.get('Alamat') || 'No Address Available';
+    const gmbr = feature.get('gmbr') || '';
 
     if (
-      allUnchecked || // Jika semua checkbox tidak aktif, tampilkan semua
-      allChecked || // Jika semua checkbox aktif, tampilkan semua
+      !allUnchecked &&
       (pagiChecked && waktuMacet === 'pagi') ||
       (siangChecked && waktuMacet === 'siang') ||
       (soreChecked && waktuMacet === 'sore') ||
       (malamChecked && waktuMacet === 'malam')
     ) {
-      // Tampilkan fitur
-      feature.setStyle(null); // Gunakan gaya bawaan layer
+      hasMatchingFeatures = true; // Ada fitur yang sesuai
+      feature.setStyle(null); // Tampilkan fitur di peta
+
+      // Tambahkan item ke daftar
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        <p><strong>${namaTempat}</strong><br>${alamat}<br><small>Waktu: ${waktuMacet}</small></p>
+        ${gmbr ? `<img src="${gmbr}" alt="${namaTempat}" />` : ''}
+      `;
+
+      // Tambahkan event listener untuk menampilkan popup saat item ditekan
+      listItem.addEventListener('click', () => {
+        const coordinate = feature.getGeometry().getCoordinates();
+        let content = `
+          <div class="popup-content">
+            <h3>${namaTempat}</h3>
+            <p><strong>Alamat:</strong> ${alamat}</p>
+            <p><strong>Waktu Macet:</strong> ${waktuMacet}</p>
+        `;
+        if (gmbr) {
+          content += `<img src="${gmbr}" alt="${namaTempat}" />`;
+        }
+        content += `</div>`;
+        document.getElementById('popup-content').innerHTML = content;
+        overlay.setPosition(coordinate); // Set posisi popup
+      });
+
+      trafficItems.appendChild(listItem);
     } else {
-      // Sembunyikan fitur
-      feature.setStyle(new Style());
+      feature.setStyle(new Style()); // Sembunyikan fitur
     }
   });
+
+  // Tampilkan atau sembunyikan daftar berdasarkan hasil filter
+  if (hasMatchingFeatures) {
+    trafficListContainer.style.display = 'block'; // Tampilkan daftar
+  } else {
+    trafficListContainer.style.display = 'bl'; // Sembunyikan daftar
+  }
 }
+
+
+
 
 // Event listener for checkbox changes to filter traffic data
 document.getElementById('macet-pagi').addEventListener('change', filterMacetByTime);
