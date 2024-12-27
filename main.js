@@ -82,6 +82,8 @@ const map = new Map({
   view: new View({
     center: pekanbaruCoordinates,
     zoom: 12, // Adjust zoom level as needed
+    maxZoom: 18, // Allow zooming in closer
+    minZoom: 12, // Restrict zooming out beyond level 12
   }),
 });
 
@@ -117,7 +119,48 @@ map.on('singleclick', function (evt) {
     overlay.setPosition(undefined);
   }
 });
+function filterMacetByTime() {
+  const pagiChecked = document.getElementById('macet-pagi').checked;
+  const siangChecked = document.getElementById('macet-siang').checked;
+  const soreChecked = document.getElementById('macet-sore').checked;
+  const malamChecked = document.getElementById('macet-malam').checked;
 
+  const allUnchecked = !pagiChecked && !siangChecked && !soreChecked && !malamChecked; // Semua checkbox tidak aktif
+  const allChecked = pagiChecked && siangChecked && soreChecked && malamChecked; // Semua checkbox aktif
+
+  const features = macet.getSource().getFeatures(); // Mendapatkan semua fitur
+
+  // Iterasi fitur dan atur visibilitas berdasarkan filter
+  features.forEach((feature) => {
+    const waktuMacet = feature.get('waktuMacet'); // Ambil waktu macet dari properti fitur
+
+    if (
+      allUnchecked || // Jika semua checkbox tidak aktif, tampilkan semua
+      allChecked || // Jika semua checkbox aktif, tampilkan semua
+      (pagiChecked && waktuMacet === 'pagi') ||
+      (siangChecked && waktuMacet === 'siang') ||
+      (soreChecked && waktuMacet === 'sore') ||
+      (malamChecked && waktuMacet === 'malam')
+    ) {
+      // Tampilkan fitur
+      feature.setStyle(null); // Gunakan gaya bawaan layer
+    } else {
+      // Sembunyikan fitur
+      feature.setStyle(new Style());
+    }
+  });
+}
+
+// Event listener for checkbox changes to filter traffic data
+document.getElementById('macet-pagi').addEventListener('change', filterMacetByTime);
+document.getElementById('macet-siang').addEventListener('change', filterMacetByTime);
+document.getElementById('macet-sore').addEventListener('change', filterMacetByTime);
+document.getElementById('macet-malam').addEventListener('change', filterMacetByTime);
+
+// Initialize map with filter applied on page load
+document.addEventListener('DOMContentLoaded', function () {
+  filterMacetByTime(); // Apply initial filter
+});
 // Close popup on click
 document.getElementById('popup-closer').onclick = function () {
   overlay.setPosition(undefined);

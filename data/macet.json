@@ -6,7 +6,8 @@
       "properties": {
         "Nama Tempat": "Sekolah Kusuma",
         "Alamat": "FFPW+V82, Jl. Bukit Barisan, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau",
-        "gmbr": "gmbr/satu.png"
+        "gmbr": "gmbr/satu.png",
+        "waktuMacet": "pagi"
       },
       "geometry": {
         "type": "Point",
@@ -18,7 +19,8 @@
       "properties": {
         "Nama Tempat": "RM Baresolok Harapan Raya (Simpang Jl. Bukit Barisan)",
         "Alamat": "Jl. Bukit Barisan No.Simpang, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau 29292",
-        "gmbr": "gmbr/dua.png"
+        "gmbr": "gmbr/dua.png",
+        "waktuMacet": "siang"
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +32,8 @@
       "properties": {
         "Nama Tempat": "Domino's Pizza",
         "Alamat": "Jl. Harapan Raya No.253, Tengkerang Labuai Kec. Bukit Raya, Kec. Sukajadi, Kota Pekanbaru, Riau 28126",
-        "gmbr": "gmbr/tiga.png"
+        "gmbr": "gmbr/tiga.png",
+        "waktuMacet": "siang"
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +45,8 @@
       "properties": {
         "Nama Tempat": "New Car Free Day (CFD) Kota PekanBaru",
         "Alamat": "GC8W+XXM, Jl. Jend. Sudirman, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28156",
-        "gmbr": "gmbr/empat.png"
+        "gmbr": "gmbr/empat.png",
+        "waktuMacet": "pagi"
       },
       "geometry": {
         "type": "Point",
@@ -54,7 +58,8 @@
       "properties": {
         "Nama Tempat": "Masjid Al Washliyah",
         "Alamat": "Jl. Dr. Samratulangi No.7, Sago, Kec. Senapelan, Kota Pekanbaru, Riau 28155",
-        "gmbr": "gmbr/lima.png"
+        "gmbr": "gmbr/lima.png",
+        "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +71,8 @@
       "properties": {
         "Nama Tempat": "Mal Pekanbaru",
         "Alamat": "Jl. Jend. Sudirman No.123, Kota Tinggi, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28112",
-        "gmbr": "gmbr/enam.png"
+        "gmbr": "gmbr/enam.png",
+        "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +84,8 @@
       "properties": {
         "Nama Tempat": "Simpang Garuda Sakti",
         "Alamat": "Simpang Baru, Tampan, Pekanbaru City, Riau",
-        "gmbr": "gmbr/tujuh.png"
+        "gmbr": "gmbr/tujuh.png",
+        "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -90,7 +97,8 @@
       "properties": {
         "Nama Tempat": "Simpang Tobek Godang",
         "Alamat": "F97V+JH5, Jl. HR. Soebrantas, Tuah Karya, Kec. Tampan, Kota Pekanbaru, Riau 28293",
-        "gmbr": "gmbr/delapan.png"
+        "gmbr": "gmbr/delapan.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -102,7 +110,8 @@
       "properties": {
         "Nama Tempat": "Simpang Empat Ska",
         "Alamat": "Simpang Empat Ska",
-        "gmbr": "gmbr/sembilan.png"
+        "gmbr": "gmbr/sembilan.png",
+         "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
@@ -114,7 +123,8 @@
       "properties": {
         "Nama Tempat": "Jalan Riau",
         "Alamat": "Jl. Riau",
-        "gmbr": "gmbr/sepuluh.png"
+        "gmbr": "gmbr/sepuluh.png",
+        "waktuMacet": "pagi"
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +136,8 @@
       "properties": {
         "Nama Tempat": "Rumah Sakit Santa Maria hingga Pasar Kodim",
         "Alamat": "Jl. Jend. Ahmad Yani No.75, Kota Baru, Kec. Pekanbaru Kota, Kota Pekanbaru, Riau 28156",
-        "gmbr": "gmbr/sebelas.png"
+        "gmbr": "gmbr/sebelas.png",
+        "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
@@ -138,7 +149,8 @@
       "properties": {
         "Nama Tempat": "Jalan Sudirman di bawah Jembatan Siak VI",
         "Alamat": "Jl. Jend. Sudirman No.40, Kp. Dalam, Kec. Senapelan, Kota Pekanbaru, Riau 28155",
-        "gmbr": "gmbr/dua_belas.png"
+        "gmbr": "gmbr/dua_belas.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -150,7 +162,8 @@
       "properties": {
         "Nama Tempat": "Fly over Simpang Mall SKA",
         "Alamat": "GC39+4PH, Jl. Soekarno - Hatta, Labuh Baru Tim., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
-        "gmbr": "gmbr/tiga_belas.png"
+        "gmbr": "gmbr/tiga_belas.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -162,7 +175,8 @@
       "properties": {
         "Nama Tempat": "Jalan Jendral Sudirman bawah Flyover Harapan Raya",
         "Alamat": "FFX3+RM8, Tengkerang Utara, Bukit Raya, Pekanbaru City, Riau 28128",
-        "gmbr": "gmbr/empat_belas.png"
+        "gmbr": "gmbr/empat_belas.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -174,7 +188,8 @@
       "properties": {
         "Nama Tempat": "Jalan Tuanku Tambusai Samping SKA",
         "Alamat": "Jl. Lintas Sumatra 1-500, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
-        "gmbr": "gmbr/lima_belas.png"
+        "gmbr": "gmbr/lima_belas.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -186,7 +201,8 @@
       "properties": {
         "Nama Tempat": "Area Kantor Imigrasi",
         "Alamat": "Jl. KH. Ahmad Dahlan 7-9, Pulau Karam, Kec. Sukajadi, Kota Pekanbaru, Riau 28156",
-        "gmbr": "gmbr/enam_belas.png"
+        "gmbr": "gmbr/enam_belas.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -198,7 +214,8 @@
       "properties": {
         "Nama Tempat": "Jl. Soekarno - Hatta 48",
         "Alamat": "Jl. Soekarno - Hatta 48, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
-        "gmbr": "gmbr/tujuh_belas.png"
+        "gmbr": "gmbr/tujuh_belas.png",
+         "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
@@ -210,7 +227,8 @@
       "properties": {
         "Nama Tempat": "Simpang Arifin",
         "Alamat": "Delima, Tampan, Pekanbaru City, Riau 28289",
-        "gmbr": "gmbr/delapan_belas.png"
+        "gmbr": "gmbr/delapan_belas.png",
+        "waktuMacet": "siang"
       },
       "geometry": {
         "type": "Point",
@@ -222,7 +240,8 @@
       "properties": {
         "Nama Tempat": "Jalan Sembilang Simpang Jalan Pramuka",
         "Alamat": "Jl. Sembilang No.23, Lembah Sari, Kec. Rumbai Pesisir, Kota Pekanbaru, Riau 28266",
-        "gmbr": "gmbr/sembilan_belas.png"
+        "gmbr": "gmbr/sembilan_belas.png",
+        "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -234,7 +253,8 @@
       "properties": {
         "Nama Tempat": "Persimpangan di Tugu Songket",
         "Alamat": "F9WV+XQF, Simpang Baru, Tampan, Pekanbaru City, Riau 28292",
-        "gmbr": "gmbr/dua_puluh.png"
+        "gmbr": "gmbr/dua_puluh.png",
+        "waktuMacet": "siang"
       },
       "geometry": {
         "type": "Point",
@@ -246,7 +266,8 @@
       "properties": {
         "Nama Tempat": "Jl. Riau dekat Mall Ciputra",
         "Alamat": "Jl. Riau No.169, Padang Terubuk, Kec. Senapelan, Kota Pekanbaru, Riau 28155",
-        "gmbr": "gmbr/dua_satu.png"
+        "gmbr": "gmbr/dua_satu.png",
+        "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
@@ -258,7 +279,8 @@
       "properties": {
         "Nama Tempat": "Simpang jl. Riau Ujung dan Jl. Soekarno-Hatta",
         "Alamat": "Jl. Riau Ujung No.128, Air Hitam, Kec. Payung Sekaki, Kota Pekanbaru, Riau 28291",
-        "gmbr": "gmbr/dua_dua.png"
+        "gmbr": "gmbr/dua_dua.png",
+        "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -270,7 +292,8 @@
       "properties": {
         "Nama Tempat": "Pasar Pagi Arengka",
         "Alamat": "Jl. Tanjung Da No.10, Sidomulyo Tim., Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28289",
-        "gmbr": "gmbr/dua_tiga.png"
+        "gmbr": "gmbr/dua_tiga.png",
+        "waktuMacet": "pagi"
       },
       "geometry": {
         "type": "Point",
@@ -282,7 +305,8 @@
       "properties": {
         "Nama Tempat": "Pasar Sago",
         "Alamat": "Pasar bawah pasar wisata, Kampung Dalam, Senapelan, Pekanbaru City, Riau 28152",
-        "gmbr": "gmbr/dua_empat.png"
+        "gmbr": "gmbr/dua_empat.png",
+        "waktuMacet": "pagi"
       },
       "geometry": {
         "type": "Point",
@@ -294,7 +318,8 @@
       "properties": {
         "Nama Tempat": "Lampu merah perempatan jalan soekarno-hatta, jl durian, jl . Dharma Bakti",
         "Alamat": "Jl. Soekarno - Hatta No.87, Labuh Baru Tim., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
-        "gmbr": "gmbr/dua_lima.png"
+        "gmbr": "gmbr/dua_lima.png",
+        "waktuMacet": "siang"
       },
       "geometry": {
         "type": "Point",
@@ -306,7 +331,8 @@
       "properties": {
         "Nama Tempat": "Depan MTC(metropolitan trade center)",
         "Alamat": "Jl. HR. Soebrantas No.KM. 12.5, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 29211",
-        "gmbr": "gmbr/dua_enam.png"
+        "gmbr": "gmbr/dua_enam.png",
+        "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -318,7 +344,8 @@
       "properties": {
         "Nama Tempat": "Jalan Suka Karya(Kualu)",
         "Alamat": "Jl. suka karya, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 29211",
-        "gmbr": "gmbr/dua_tujuh.png"
+        "gmbr": "gmbr/dua_tujuh.png",
+        "waktuMacet": "siang"
       },
       "geometry": {
         "type": "Point",
@@ -330,7 +357,8 @@
       "properties": {
         "Nama Tempat": "Jalan Depan Vila Pesona Panam",
         "Alamat": "Jl. Ke Bangkinang, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28293",
-        "gmbr": "gmbr/dua_delapan.png"
+        "gmbr": "gmbr/dua_delapan.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -342,7 +370,8 @@
       "properties": {
         "Nama Tempat": "Depan Lapangan Purna MTQ",
         "Alamat": "Jl. Jend. Sudirman 13716, Simpang Tiga, Kec. Bukit Raya, Kota Pekanbaru, Riau 28288",
-        "gmbr": "gmbr/dua_sembilan.png"
+        "gmbr": "gmbr/dua_sembilan.png",
+         "waktuMacet": "sore"
       },
       "geometry": {
         "type": "Point",
@@ -354,7 +383,8 @@
       "properties": {
         "Nama Tempat": "Pos Gurindam 9",
         "Alamat": "Pos Gurindam 9, Jl. Jend. Sudirman No.61, Rintis, Kec. Lima Puluh, Kota Pekanbaru, Riau 28155",
-        "gmbr": "gmbr/tiga_puluh.png"
+        "gmbr": "gmbr/tiga_puluh.png",
+         "waktuMacet": "malam"
       },
       "geometry": {
         "type": "Point",
